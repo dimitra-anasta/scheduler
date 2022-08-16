@@ -25,12 +25,65 @@
   <body>
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
+      <h2>Current Time &amp; Date: <br /> <span id="time-display">00:00:00</span></h2>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
+      
+      <!-- On rows -->
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Time</th>
+            <th scope="col">Event</th>
+            <th scope="col">Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-danger">
+            <th scope="row">6:00am</th>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="table-danger">
+            <th scope="row">7:00am</th>
+            <td></td>
+            <td></td>
+       
+          </tr>
+          <tr class="table-warning">
+            <th scope="row">8:00am</th>
+            <td>Meeting with Advisors</td>
+            <td>Bring Paperwork</td> 
+          </tr>
+          <tr class="table-warning">
+            <th scope="row">9:00am</th>
+            <td></td>
+            <td></td> 
+          </tr>
+          <tr class="table-warning">
+            <th scope="row">10:00am</th>
+            <td></td>
+            <td></td> 
+          </tr>
+          <tr class="table-success">
+            <th scope="row">11:00am</th>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="table-warning">
+            <th scope="row">12:00pm</th>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
     </div>
+
+    <script src="./script.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
